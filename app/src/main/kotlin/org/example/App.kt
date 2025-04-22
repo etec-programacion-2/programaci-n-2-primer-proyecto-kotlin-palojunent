@@ -4,13 +4,25 @@
 package org.example
 import java.time.LocalDate
 
+fun tiposdefuncion () {
+    val nombre: String = "Paloma"
+    val edad: Int = 16
+    val altura: Double = 1.54
+    val esEstudiante: Boolean = True
+
+    println("$nombre")
+    println("$edad")
+    println("$altura")
+    println("$esEstudiante")
+}
+
 fun main() {
 
     val nombre = "Paloma"
     val apellido = "Junent"
     val fecha = LocalDate.now()
+    println("¡Hola, Kotlin!")
     println(" Tu nombre completo es $nombre $apellido")
     println("Hoy es $fecha")
-
-
+    tiposdefuncion()
 }
