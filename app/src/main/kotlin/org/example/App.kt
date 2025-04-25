@@ -14,6 +14,9 @@ fun main() {
     println(numpositoneg(-3))
     mostrarNumerosConLoops()
     numparesdel1al20()
+    println(factorial(25))
+    println(saludar("Paloma", 16))
+    println(potencia(2.0, 3))
 }
 
 fun nombreyapellido () {
@@ -107,3 +110,26 @@ fun numparesdel1al20(){
         k+=2
     } while (k <= 20)
 } 
+
+fun factorial(n: Int): Int {
+    return if (n <= 1) 1 else n * factorial(n - 1)
+}
+
+fun saludar(nombre: String, edad: Int = 0) {
+    println("Hola $nombre, tienes $edad años")
+}
+
+fun potencia(base: Double, exponente : Int) Double {
+    if (exponente == 0)return 1.0
+    if (exponente == base)return base 
+    
+    if (exponente < 0){
+        return 1/potencia(base, -exponente)
+    }
+    
+    if (exponente > 0){
+        return base * potencia (base , exponente, -1)
+    }
+
+
+}
