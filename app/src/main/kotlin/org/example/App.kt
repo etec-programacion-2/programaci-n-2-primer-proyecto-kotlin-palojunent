@@ -8,6 +8,10 @@ fun main() {
     nombreyapellido()
     tiposdefuncion()
     rectangulo()
+    println(paroimpar(4))
+    println(paroimpar(9))
+    println(numpositoneg(8))
+    println(numpositoneg(-3))
 }
 
 fun nombreyapellido () {
@@ -37,4 +41,21 @@ fun rectangulo () {
     val area = base * alt
 
     println(" El área del rectángulo es : $area")
+
+}
+
+
+fun paroimpar (numero: Int): String { 
+    return when {
+        numero % 2 == 0 -> "Par"
+        else -> "Impar"
+    }       
+}
+
+fun numpositoneg (numero: Int): String {
+    return when {
+        numero < 0 -> "negativo"
+        numero > 0 -> "positivo"
+        else -> "cero"
+    }
 }
