@@ -7,6 +7,7 @@ import java.time.LocalDate
 fun main() {
     nombreyapellido()
     tiposdefuncion()
+    rectangulo()
 }
 
 fun nombreyapellido () {
@@ -30,3 +31,10 @@ fun tiposdefuncion () {
     println("es estudiante? : $esEstudiante")
 }
 
+fun rectangulo () {
+    val alt: Double = 4.5
+    val base: Double = 2.25
+    val area = base * alt
+
+    println(" El área del rectángulo es : $area")
+}
