@@ -12,6 +12,8 @@ fun main() {
     println(paroimpar(9))
     println(numpositoneg(8))
     println(numpositoneg(-3))
+    mostrarNumerosConLoops()
+    numparesdel1al20()
 }
 
 fun nombreyapellido () {
@@ -59,3 +61,49 @@ fun numpositoneg (numero: Int): String {
         else -> "cero"
     }
 }
+
+fun mostrarNumerosConLoops() {
+    
+    println("for:")
+    for (i in 1..10) {
+        println(i)
+    }
+    
+    
+    println("while:")
+    var j = 1
+    while (j <= 10) {
+        println(j)
+        j++
+    }
+    
+    
+    println("do-while:")
+    var k = 1
+    do {
+        println(k)
+        k++
+    } while (k <= 10)
+}
+
+fun numparesdel1al20(){
+    
+    println ("for:")
+    for (i in 2..20 step 2) {
+        println(i)
+    }
+
+    println("while:")
+    var j = 2
+    while (j <= 20) {
+        println(j)
+        j+=2
+    }
+
+    println("do-while:")
+    var k = 2
+    do {
+        println(k)
+        k+=2
+    } while (k <= 20)
+} 
